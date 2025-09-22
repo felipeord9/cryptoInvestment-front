@@ -45,11 +45,6 @@ export default function Form() {
     return () => clearInterval(interval);
   }, []);
 
-  // ✅ Filtrar por búsqueda
-  /* const filteredCryptos = res?.filter((c) =>
-    c.name.toLowerCase().includes(search.toLowerCase()) ||
-    c.symbol.toLowerCase().includes(search.toLowerCase())
-  ); */
 
   return (
     <div
@@ -58,20 +53,6 @@ export default function Form() {
     >
       <h1 className="text-center fs-5 fw-bold">CryptoInvestment</h1>
       <form className="" >
-        {/* <button
-          className="btn btn-sm btn-success"
-          onClick={(e)=>handleVerify(e)}
-        >
-          consultar
-        </button>
-        <input
-          type="text"
-          placeholder="Buscar crypto..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="border p-2 mt-4 w-full"
-        /> */}
-        {/* {JSON.stringify(res)} */}
         <div
           className="d-flex w-100 flex-column mt-2"
         >
